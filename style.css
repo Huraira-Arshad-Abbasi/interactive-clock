@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #201f2d;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+    text-align: left;
+    transition: all 3s ease;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 25rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 0;
+
+}
+.img{
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    width: 80%;
+    height: 9rem;
+    /* background: #000; */
+    border-radius: 10px;
+}
+.img > img{
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+.img > h2{
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+}
+.buttons{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    background: #201f2d;
+    box-shadow: 0 0 5px 5px rgb(246, 8, 8, 0.5);
+    margin: auto;
+    position: relative;
+}
+.buttons > button{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+.buttons > button:first-child{
+    top: 45%;
+    left: 1rem;
+}
+.buttons > button:nth-child(2){
+    top: 1rem;
+    left: 40%;
+}
+.buttons > button:nth-child(3){
+    top: 45%;
+    right: 1rem;
+}
+.buttons > button:nth-child(4){
+    left: 40%;
+    bottom: 1rem;
+}
